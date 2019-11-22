@@ -228,40 +228,6 @@ svg.img-flex {
   clip-path: inset(50%);
 }
 
-.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  clip: auto;
-  clip-path: none;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.chop,
-.crop {
-  overflow: hidden;
-}
-
-.truncate {
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.scrollable {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
 .clearfix::after {
   content: " ";
   display: block;
@@ -294,40 +260,41 @@ svg.img-flex {
   /* stylelint-enable */
 }
 
-.center-content,
-.center-content-vertical,
-.center-contents,
-.center-contents-vertical {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-flex-direction: column wrap;
-  -ms-flex-direction: column wrap;
-  flex-flow: column wrap;
+.inline {
+  display: inline;
 }
 
-.center-content-start,
-.center-content-vertical-start,
-.center-contents-start,
-.center-contents-vertical-start {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column wrap;
-  -ms-flex-direction: column wrap;
-  flex-flow: column wrap;
+.block {
+  display: block;
+}
+
+.inline-block, .ib {
+  display: inline-block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+[class*="pin-"],
+.absolute {
+  position: absolute;
+}
+
+.pin-top-left,
+.pin-left-top,
+.pin-tl,
+.pin-lt {
+  top: 0;
+  left: 0;
 }
 
 ol {
